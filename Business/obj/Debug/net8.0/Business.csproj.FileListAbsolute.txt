@@ -17,3 +17,4 @@ C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Business\obj\Debu
 C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Business\obj\Debug\net8.0\ref\Business.dll
 C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Business\bin\Debug\net8.0\Core.dll
 C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Business\bin\Debug\net8.0\Core.pdb
+C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Business\obj\Debug\net8.0\Business.sourcelink.json

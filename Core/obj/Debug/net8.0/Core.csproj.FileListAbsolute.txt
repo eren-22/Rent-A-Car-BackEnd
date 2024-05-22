@@ -10,3 +10,4 @@ C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Core\obj\Debug\ne
 C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Core\obj\Debug\net8.0\refint\Core.dll
 C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Core\obj\Debug\net8.0\Core.pdb
 C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Core\obj\Debug\net8.0\ref\Core.dll
+C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Core\obj\Debug\net8.0\Core.sourcelink.json

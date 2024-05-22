@@ -13,3 +13,4 @@ C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Entities\bin\Debu
 C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Entities\bin\Debug\net8.0\Core.pdb
 C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Entities\obj\Debug\net8.0\Entities.csproj.AssemblyReference.cache
 C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Entities\obj\Debug\net8.0\Entities.csproj.Up2Date
+C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\Entities\obj\Debug\net8.0\Entities.sourcelink.json
