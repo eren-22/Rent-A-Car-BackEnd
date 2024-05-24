@@ -10,7 +10,8 @@ namespace ConsoleCarUI
         static void Main(string[] args)
         {
             //CarList();
-            CarTest();
+            //CarTest();
+            CustomerTest();
         }
 
         #region Araba DTO' ları yapıldı
@@ -48,5 +49,24 @@ namespace ConsoleCarUI
             }
         }
         #endregion
+
+        #region Müşteri test
+        private static void CustomerTest()
+        {
+            CustomerManager customerManager = new CustomerManager(new EfCustomerDal());
+
+            var result = customerManager.GetCustomers();
+
+            if (result.Success == true)
+            {
+                foreach (var customer in result.Data)
+                {
+                    Console.WriteLine(customer.CompanyName);
+                }
+            }
+            else { Console.WriteLine(result.Message); }
+        }
+        #endregion
+
     }
 }

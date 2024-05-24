@@ -34,6 +34,12 @@ namespace Business.Concrete
             }
         }
 
+        public IResult Delete(Car car)
+        {
+            _carDal.Delete(car);
+            return new SuccessResult(Messages.CarDeleted);
+        }
+
         public IDataResult<Car> GetById(int id)
         {
             return new SuccessDataResult<Car>(_carDal.Get(p => p.CarId == id));
@@ -41,10 +47,10 @@ namespace Business.Concrete
 
         public IDataResult<List<CarDetailDto>> GetCarDetails()
         {
-            if (DateTime.Now.Hour == 14)  //Örneğin saat 14' de bakımda oluyorsa. Bu arada listeleme yapmaz.
-            {
-                return new ErrorDataResult<List<CarDetailDto>>(Messages.MaintenanceTime);
-            }
+            //if (DateTime.Now.Hour == 14)  //Örneğin saat 14' de bakımda oluyorsa. Bu arada listeleme yapmaz.
+            //{
+            //    return new ErrorDataResult<List<CarDetailDto>>(Messages.MaintenanceTime);
+            //}
 
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.CarDetail());
         }
@@ -62,6 +68,12 @@ namespace Business.Concrete
         public IDataResult<List<Car>> GetColorsByColorId(int colorId)
         {
             throw new NotImplementedException();
+        }
+
+        public IResult Update(Car car)
+        {
+            _carDal.Update(car);
+            return new SuccessResult(Messages.CarUpdated);
         }
     }
 }
