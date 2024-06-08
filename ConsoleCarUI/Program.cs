@@ -28,7 +28,6 @@ namespace ConsoleCarUI
         }
         #endregion
 
-
         #region Result tamamlandı
         private static void CarTest()
         {

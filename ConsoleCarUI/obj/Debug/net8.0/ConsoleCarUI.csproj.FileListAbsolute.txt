@@ -70,3 +70,5 @@ C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\ConsoleCarUI\bin\
 C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\ConsoleCarUI\bin\Debug\net8.0\Core.dll
 C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\ConsoleCarUI\bin\Debug\net8.0\Core.pdb
 C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\ConsoleCarUI\obj\Debug\net8.0\ConsoleCarUI.sourcelink.json
+C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\ConsoleCarUI\bin\Debug\net8.0\Autofac.dll
+C:\Users\eren1\OneDrive\Masaüstü\CSharpProjects\ReCapProject\ConsoleCarUI\bin\Debug\net8.0\FluentValidation.dll
