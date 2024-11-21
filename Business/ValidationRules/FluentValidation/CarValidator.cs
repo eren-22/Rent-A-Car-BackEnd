@@ -15,6 +15,7 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(c => c.DailyPrice).NotEmpty();
             RuleFor(c => c.DailyPrice).GreaterThanOrEqualTo(1);
             RuleFor(c => c.Description).NotEmpty();
+            RuleFor(c => c.ModelYear).LessThanOrEqualTo(DateTime.Now.Year).WithMessage("Geçersiz yıl!");
         }
     }
 }
