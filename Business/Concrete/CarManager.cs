@@ -27,49 +27,44 @@ namespace Business.Concrete
         [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
         {
+            ValidationTool.Validate(new CarValidator(), car);
+
             _carDal.Add(car);
+
             return new SuccessResult(Messages.CarAdded);
         }
 
         public IResult Delete(Car car)
         {
             _carDal.Delete(car);
+
             return new SuccessResult(Messages.CarDeleted);
         }
 
-        public IDataResult<Car> GetById(int id)
-        {
-            return new SuccessDataResult<Car>(_carDal.Get(p => p.CarId == id));
-        }
-
-        public IDataResult<List<CarDetailDto>> GetCarDetails()
-        {
-            //if (DateTime.Now.Hour == 14)  //Örneğin saat 14' de bakımda oluyorsa. Bu arada listeleme yapmaz.
-            //{
-            //    return new ErrorDataResult<List<CarDetailDto>>(Messages.MaintenanceTime);
-            //}
-
-            return new SuccessDataResult<List<CarDetailDto>>(_carDal.CarDetail());
-        }
-
-        public IDataResult<List<Car>> GetCars()
+        public IDataResult<List<Car>> GetAll()
         {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(), Messages.CarsListed);
         }
 
-        public IDataResult<List<Car>> GetCarsByBrandId(int brandId)
+        public IDataResult<List<CarDetailDto>> GetCarDetails()
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.CarDetails(), Messages.CarDetailsListed);
         }
 
-        public IDataResult<List<Car>> GetColorsByColorId(int colorId)
+        public IDataResult<List<Car>> GetCarsByBrandId(int id)
         {
-            throw new NotImplementedException();
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.BrandId == id), Messages.CarByBrandListed);
+        }
+
+        public IDataResult<List<Car>> GetCarsByColorId(int id)
+        {
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.ColorId == id), Messages.CarByColorListed);
         }
 
         public IResult Update(Car car)
         {
             _carDal.Update(car);
+
             return new SuccessResult(Messages.CarUpdated);
         }
     }

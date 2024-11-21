@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "seEELdBlLwHpxtDBcyQ8uuHAgPQVtwRn3hyHeyvLJ4Q=",
+  "Source": "API",
+  "BasePath": "_content/API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "API\\wwwroot",
+      "Source": "API",
+      "ContentRoot": "C:\\Users\\eren1\\OneDrive\\Masaüstü\\CSharpProjects\\ReCapProject\\API\\wwwroot\\",
+      "BasePath": "_content/API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

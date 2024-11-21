@@ -12,8 +12,9 @@ namespace Business.ValidationRules.FluentValidation
     {
         public CarValidator()
         {
-            RuleFor(c => c.CarName).NotEmpty().WithMessage("Araba adı boş olamaz.");
-            RuleFor(c => c.DailyPrice).GreaterThan(0).WithMessage("Araba fiyatı 0' dan büyük olmalıdır.");
+            RuleFor(c => c.DailyPrice).NotEmpty();
+            RuleFor(c => c.DailyPrice).GreaterThanOrEqualTo(1);
+            RuleFor(c => c.Description).NotEmpty();
         }
     }
 }

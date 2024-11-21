@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace Core.CrossCuttingConcerns.Validation
 {
-    public static class ValidationTool
+    public class ValidationTool
     {
-        public static void Validate(IValidator validator, object entity)  // object diyoruz çünkü entity de olabilir dto'da (base)
+        public static void Validate(IValidator validator, object entity)
         {
             var context = new ValidationContext<object>(entity);
             var result = validator.Validate(context);
+
             if (!result.IsValid)
             {
                 throw new ValidationException(result.Errors);

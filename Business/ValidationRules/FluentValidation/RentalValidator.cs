@@ -14,6 +14,12 @@ namespace Business.ValidationRules.FluentValidation
         {
             RuleFor(r => r.RentDate).NotEmpty();
             RuleFor(r => r.ReturnDate).NotEmpty();
+            RuleFor(r => r.ReturnDate).Must(BeInTheFuture).WithMessage("Geçmiş bir tarih girilemez!");
+        }
+
+        private bool BeInTheFuture(DateTime? date)
+        {
+            return date.HasValue && date > DateTime.Now;
         }
     }
 }

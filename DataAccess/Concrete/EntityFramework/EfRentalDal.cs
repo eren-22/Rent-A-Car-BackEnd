@@ -9,15 +9,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfRentalDal : EfEntityRepositoryBase<Rental, RentACarDbContext>, IRentalDal
+    public class EfRentalDal : EfEntityRepositoryBase<Rental, RentACarContext>, IRentalDal
     {
-        public Rental GetARentalCar(int carId)
-        {
-            using (RentACarDbContext context = new RentACarDbContext())
-            {
-                var result = context.Set<Rental>().Where(r => r.CarId == carId && r.ReturnDate == null);
-                return result.SingleOrDefault();
-            }
-        }
+
     }
 }
